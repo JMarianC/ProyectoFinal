@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!--Hoja de estilos css-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./imagenes/logo1.png">
+    <title>Galery</title>
+</head>
+<body>
+    <!--SECCIÓN DE BARRA DE NAVEGACIÓN -->
+    <header class="encabezado navegador">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg nav-menu"> <!-- Poner estilos en css, barra expandida en lg-->
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="/index.html#inicio" target="_blank"><img src="imagenes/logo1.png" alt="LOGO"></a> <!--titulo o logo-->
+              <div class="text-right">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#BarraNav" aria-controls="BarraNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse text-right" id="BarraNav">
+                <ul class="navbar-nav ms-auto flex-nowrap menu-link"> <!--Barra 2 - Principal-->
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html#about" target="_blank"> <!--borre "active"-->
+                      ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html#booking" target="_blank">BOOKING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html#menu" target="_blank">MENU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank">CONTACT</a>
+                  </li>
+                </ul>
+                <!--BOTON PARA CAMBIAR FONDO-->
+                <button class="switch" id="switch">
+					<span><i class="bi bi-brightness-high-fill"></i></span>
+					<span><i class="bi bi-moon-fill"></i></span>
+				</button>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <!--GALERIA-->
+
+    <div class="galeria">
+        <h1 class="titulo1">CHOOSE YOUR FAVORITE COFFEE</h1>
+        <div class="barra"></div>
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="imagenes/img1.jpg" alt="">
+                <div class="overlay">
+                    <h2>1980</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img2.jpg" alt="">
+                <div class="overlay">
+                    <h2>ESPRESSO</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img3.jpg" alt="">
+                <div class="overlay">
+                    <h2>DOUBLE ESPRESSO</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img4.jpg" alt="">
+                <div class="overlay">
+                    <h2>MOCCHIATO</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img5.jpg" alt="">
+                <div class="overlay">
+                    <h2>AMERICAN</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img6.jpg" alt="">
+                <div class="overlay">
+                    <h2>LATTE</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img7.jpg" alt="">
+                <div class="overlay">
+                    <h2>CAPPUCCINO</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img8.jpg" alt="">
+                <div class="overlay">
+                    <h2>IRISH</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img9.jpg" alt="">
+                <div class="overlay">
+                    <h2>HAWAIIAN</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img15.jpg" alt="">
+                <div class="overlay">
+                    <h2>GOOD LIFE & GOOD COFFE</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img16.jpg" alt="">
+                <div class="overlay">
+                    <h2>YOU NEED A DOBLE</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img17.jpg" alt="">
+                <div class="overlay">
+                    <h2>KEEP CALM & TAKE A COFFE</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img18.jpg" alt="">
+                <div class="overlay">
+                    <h2>1980</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img19.jpg" alt="">
+                <div class="overlay">
+                    <h2>ICE COFFE</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="imagenes/img20.jpg" alt="">
+                <div class="overlay">
+                    <h2>MOCCHIATO</h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--FORMULARIO-->
+
+    <div class="formulario">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftKEcOAQXWTkgKWIDtyuD1nRQar9p7ul-azpgSHq7vrs6WPw/viewform?embedded=true" width="640" height="2268" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe><br>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSftKEcOAQXWTkgKWIDtyuD1nRQar9p7ul-azpgSHq7vrs6WPw/viewform?embedded=true" target="_blank">Click for your order.</a>
+    </div>
+
+    <!--SECCIÓN FOOTER-->
+    <footer class="sec-footer">
+        <div class="footer-principal">
+            <div class="datos-contacto">
+                <ul>
+                    <li><a href="https://goo.gl/maps/fzoM9AhwFGm1tBPx8" target="_blank"><i class="bi bi-geo-alt"></i> Paseo Sarmiento - Ciudad de Mendoza</a></li>
+                    <li><a href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank"><i class="bi bi-envelope"></i> marianocortez8085@gmail.com</a></li>
+                    <li><a href="https://wa.me/5492616240552" target="_blank"><i class="bi bi-whatsapp"></i> +54 9 (0261)6 240 552</a></li>
+                </ul>
+            </div>
+            <div class="nosotros">
+                <ul>
+                    <li><a href="/index.html#about" target="_blank">About us</a></li>
+                    <li><a href="/index.html#booking" target="_blank">Booking a Table</a></li>
+                    <li><a href="/index.html#menu" target="_blank">Menu</a></li>
+                    <li><a href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-redes">
+                <ul class="ul-redes">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2022 1980 RESTAURANTS. ALL RIGHTS RESERVED.</p>
+            <p>Desing by Mariano Cortez.</p>
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+

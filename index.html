@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!--Hoja de estilos css-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" href="./imagenes/logo1.png">
+    <script>
+        alert("Proyecto Final - Front End \nEste negocio no existe.\nCualquier semejanza con la realidad es pura coincidencia.") 
+    </script>
+    <title>Proyecto PD</title>
+</head>
+<body>
+    <!--SECCIÓN DE BARRA DE NAVEGACIÓN -->
+    <header class="encabezado">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg nav-menu"> <!-- Poner estilos en css, barra expandida en lg-->
+            <div class="container-fluid">
+              <a class="navbar-brand logo" href="#inicio"><img src="imagenes/logo1.png" alt="LOGO"></a> <!--titulo o logo-->
+              <div class="text-right">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#BarraNav" aria-controls="BarraNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse text-right" id="BarraNav">
+                <ul class="navbar-nav ms-auto flex-nowrap menu-link"> <!--Barra 2 - Principal-->
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about"> <!--borre "active"-->
+                      ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#booking">BOOKING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#menu">MENU</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank">CONTACT</a>
+                  </li>
+                </ul>
+                <!--BOTON PARA CAMBIAR FONDO-->
+                <button class="switch" id="switch">
+					<span><i class="bi bi-brightness-high-fill"></i></span>
+					<span><i class="bi bi-moon-fill"></i></span>
+				</button>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <!--SECCIÓN PORTADA-->
+    <section id="inicio" class="portada">
+        <img src="imagenes/img12.jpg" alt="">
+        <div class="boton-booking">
+            <div class="imagen-logo"><img src="imagenes/logo-grande.png" alt="logo-grande"></div>
+            <a href="#booking">Book a Table</a>
+        </div>
+        
+    </section>
+
+    <div id="about" class="about">
+        <p>1980 IS A FAMILY PLACE, FOR COFFEE LOVERS AND WITH A GOOD PALATE. LOCATED ON PEDESTRIANISED SARMIENTO (MENDOZA), 1980 IS A BRIGHT AND AIRY SPACE WITH GLAZED FRONTAGE ON TWO SIDES AND AN OUTSIDE TERRACE ON PEDESTRIANISED. SERVING OUR SIGNATURE WELL-TRAVELLED BREAKFAST AND ALL DAY FOOD AND DRINKS MENUS, ALONG WITH OUR FRESHLY ROASTED COFFEE, OUR STYLE IS OPEN, RELAXED AND FRIENDLY. COME DOWN FOR A COFFEE WITH THE MORNING PAPER, A COCKTAIL AND SMALL PLATES IN THE EVENING AND ANYTHING IN BETWEEN!</p>
+    </div>
+
+    <!--SECCIÓN SLIDER-->
+    <div class="contenedor">
+        <div class="slider-contenedor">
+            <section class="contenido-slider">
+                <img src="./imagenes/img11a.jpg" alt="">
+                <div>
+                    <h2>Something more valuable than all the riches on earth is
+                         having a glass of wine at the right time.</h2>
+                    <a href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank">Contact us</a>
+                </div>
+            </section>
+            <section class="contenido-slider">
+                <img src="./imagenes/img12.jpg" alt="">
+                <div>
+                    
+                    <h2>We all put our hands in the fire for those people with an extraordinary palate.
+                         Who distinguishes good food, also distinguishes good life.</h2>
+                    <a href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank">Contact us</a>
+                </div>
+            </section>
+            <section class="contenido-slider">
+                <img src="./imagenes/img13a.jpg" alt="">
+                <div>
+                    <h2>Friends bring happiness to your life. Best friends bring coffee.</h2>
+                    <a href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank">Contact us</a>
+                </div>
+            </section>
+            <section class="contenido-slider">
+                <img src="./imagenes/img11a.jpg" alt="">
+                <div>
+                    <h2>Something more valuable than all the riches on earth is
+                         having a glass of wine at the right time.</h2>
+                    <a href="#">Contact us</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+
+    <!--SECCIÓN BOOKING-->
+    <div id="booking" class="contenedor_padre">
+        <div class="caja caja-1">
+            <h2 class="titulo1">MAKE YOUR BOOKING</h2>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">
+                    <i class="bi bi-person-circle"></i></span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">
+                    <i class="bi bi-whatsapp"></i>
+                </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">
+                    <i class="bi bi-envelope-fill"></i>
+                </span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <form name="formulario" method="post" action="/send.php">
+                <!-- Campo de entrada de fecha -->
+                <input type="date" name="fecha">
+                <!-- Campo de entrada de hora -->
+                <input type="time" name="hora" min="18:00" max="21:00" step="3600" />
+            </form><br>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>Section</option>
+                <option value="1">Non-smoking Section</option>
+                <option value="2">Smoking Section</option>
+                <option value="3">Terrace</option>
+            </select><br>
+
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option selected>People</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+                <option value="9">9 People</option>
+                <option value="10">10 People</option>
+                <option value="11">11 People</option>
+                <option value="12">12 People</option>
+            </select><br>
+            <a href="#" class="btn btn-danger hero__cta">
+                <i class="bi bi-check-circle-fill"></i> Find a Table</a>
+            <p class="card-text">Sorry, we can't accept bookings for drinks only.</p>
+        </div>
+        
+        <div class="caja caja-2">
+            <h2 class="titulo1">OPENING TIME</h2>
+            <ul class="horarios">
+                <li>Monday-Thursday: 08.00 — 23.00</li>
+                <li>Friday: 08.00 — 24.00</li>
+                <li>Saturday: 09.00 — 24.00</li>
+                <li>Sunday: 09.00 — 17.00</li>
+            </ul><hr>
+
+            <p class="card-text">BANK HOLIDAY OPENING HOURS - BRUNCH MENU UNTIL 4PM</p>
+        </div>
+        <div class="caja caja-3">
+            <h2 class="titulo1">CONTACT</h2>
+            <ul class="datos">
+                <li><i class="bi bi-envelope-fill"></i> marianocortez8085@gmail.com</li>
+                <li><i class="bi bi-whatsapp"></i> +54 9 (0261) 156 240 552</li>
+                <li><i class="bi bi-geo-alt-fill"></i> <a href="https://goo.gl/maps/fzoM9AhwFGm1tBPx8" target="_blank">View map</a></li>
+            </ul><hr>
+            <ul class="redes">
+                <li><a href="https://es-la.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+       
+    </div>
+    
+    <!--SECCFIÓN MODAL-->
+    <section class="modal ">
+        <div class="modal__container">
+            <img src="imagenes/modal.svg" class="modal__img">
+            <h2 class="modal__title">Your booking has been successful!</h2>
+            <p class="modal__paragraph">Thank you for choosing us, we hope to provide you with a quality evening and enjoy our successful dishes. For more information you can contact us through our communication channels. Remember that to cancel your reservation you must do it 24 hours before.</p>
+            <a href="#" class="modal__close">Close</a>
+        </div>
+    </section>
+
+    <!--SECCIÓN SOLO TEXTO-->
+    <section class="seccion_contenedor">
+        <img class="seccion_imagen" src="./imagenes/img14.jpg" alt="wine">
+        <div id="menu" class="seccion_texto">
+            <h1>MENUS</h1>
+            <ul class="menus">
+                <li><a href="https://drive.google.com/file/d/1B_jslvvv4fl1xGC5biO7At99tL6X4Y2j/view?usp=sharing" target="_blank">BREAKFAST</a></li>
+                <li><a href="https://drive.google.com/file/d/1_opFxo2do3vvkwITcKaKt1O1pFh-aOaE/view?usp=sharing" target="_blank">BRUNCH</a></li>
+                <li><a href="https://drive.google.com/file/d/1c10MViER-OiV34qAU0CIwY2KC7pehAQo/view?usp=sharing" target="_blank">ALL DAY</a></li>
+                <li><a href="https://drive.google.com/file/d/1JFXxGPgLm9fL_P6IXXW7HSv8Nl_8imcN/view?usp=sharing" target="_blank">PUDDING</a></li>
+                <li><a href="https://drive.google.com/file/d/1esYJwqcwjuYghRGIBuHBGzrBZDNC_cxk/view?usp=sharing" target="_blank">DRINKS</a></li>
+            </ul>
+            <h2>Menus Time</h2>
+            <ul class="times">
+                <li>Breakfast - Mon-Fri until 11:30am</li>
+                <li>Brunch - Weekends until 4pm</li>
+                <li>All Day - Weekdays from 12pm, Weekends from 5pm</li>
+            </ul>
+        </div>
+    </section>
+
+    <!--SECCIÓN TAKEAWAY-->
+    <section class="take">
+        <div class="text-slider">
+            <h2>FRESHLY ROASTED COFFEE DELIVERED DIRECTLY TO YOUR DOOR.</h2>
+            <a href="galery-flex.html" target="_blank">Make your order</a>
+        </div>
+
+        <div class="imagen-take">
+            <!--<h2>otro texto</h2>-->
+            <img src="./imagenes/img21.jpg" alt="takeaway">
+        </div>
+    </section>
+
+    <!--SECCIÓN FOOTER-->
+    <footer class="sec-footer">
+        <div class="footer-principal">
+            <div class="datos-contacto">
+                <ul>
+                    <li><a href="https://goo.gl/maps/fzoM9AhwFGm1tBPx8" target="_blank"><i class="bi bi-geo-alt"></i> Paseo Sarmiento - Ciudad de Mendoza</a></li>
+                    <li><a href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank"><i class="bi bi-envelope"></i> marianocortez8085@gmail.com</a></li>
+                    <li><a href="https://wa.me/5492616240552" target="_blank"><i class="bi bi-whatsapp"></i> +54 9 (0261)6 240 552</a></li>
+                </ul>
+            </div>
+            <div class="nosotros">
+                <ul>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#booking">Booking a Table</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="https://forms.gle/vat2p5WuHvqU1Giq6" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-redes">
+                <ul class="ul-redes">
+                    <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2022 1980 RESTAURANTS. ALL RIGHTS RESERVED.</p>
+            <p>Desing by Mariano Cortez.</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
